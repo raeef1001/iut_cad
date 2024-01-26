@@ -1,0 +1,23 @@
+#button-project{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   align-content: center;
+   margin: 20px;
+   margin-top: 40px;
+   padding: 25px;
+   border: 1px solid ;
+   border-radius: 50px;
+   color: rgb(165, 161, 161);
+
+
+}
+#button-project button:hover{
+    color: white;
+    transform: scale(1.1);
+}
+.typeProject{
+    margin-top: 40px;
+    font-size: 150%;
+
+}
