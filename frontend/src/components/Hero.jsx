@@ -17,7 +17,7 @@ const Hero = () => {
         <div className="mx-auto flex flex-col justify-center overflow-hidden">
          <div>
          <h1 className={`${styles.heroHeadText} text-white text-center`}>
-             <span className='text-[#915EFF]'>IUT CAD Society</span>
+             <span className='text-[#fff]'>IUT CAD Society</span>
           </h1> 
           <p className={`${styles.heroSubText} mt-2  text-white-100 text-center`}>
           Unleashing Innovation, Connecting Minds<br className='sm:block hidden' />with The Power of Computing 

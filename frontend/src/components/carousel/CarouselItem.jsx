@@ -35,7 +35,7 @@ const CarouselItem = ({data,index,activeIndex}) => {
 
     return (
       
-        <Link to="/Pages"
+        <div 
         className=" absolute h-full w-full cursor-pointer overflow-hidden rounded-3xl drop-shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-700 ease-in-out"
         style={{
           transform: cssTransformProperties,
@@ -51,7 +51,7 @@ const CarouselItem = ({data,index,activeIndex}) => {
         }}
       >
          <Image className ='h-full w-full ' src={data.attributes.image.data.attributes.formats.small.url} alt='Card1' />
-      </Link>
+      </div>
     );
 };
 

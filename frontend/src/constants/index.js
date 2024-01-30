@@ -7,14 +7,24 @@ import{
 import image4 from "../assets/loading_images/4.gif"
 
 const navLinks = [
-  {
-    id: "Blog",
-    title: "Blog",
-  },
+ 
   {
     id: "Achievements",
     title: "Achievements",
-  }
+  },
+  {
+    id: "Activities",
+    title: "Activities",
+  },
+  {
+    id: "Blog",
+    title: "Sponsors",
+  },
+  {
+    id: "About",
+    title: "About",
+  },
+
  
  
 ]
@@ -36,18 +46,7 @@ const services = [
     title: " Multimedia & Gaming",
     icon: creator,
   },
-  {
-    title: "Programming and Algorithm",
-    icon: backend,
-  },
-  {
-    title: "Co-curricular Aid and Projects",
-    icon: mobile,
-  },
-  {
-    title: "Liaison and Publication",
-    icon: web,
-  },
+ 
 ];
 
 

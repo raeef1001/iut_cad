@@ -28,10 +28,10 @@ const ProjectCard = ({ index, id, attributes }) => {
               scale: 1,
               speed: 450,
             }}
-            className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-[400px]"
+            className="bg-opacity-1 bg-[#640D14] p-5 rounded-2xl sm:w-[360px] w-full h-[400px]"
           >
-            {
-              !isMember && (<Link
+            {!isMember && (
+              <Link
                 to={`/SinglePage/${attributes.type + "-" + id}`}
                 relative="path"
               >
@@ -42,7 +42,7 @@ const ProjectCard = ({ index, id, attributes }) => {
                     className="w-full h-full object-cover rounded-2xl"
                   />
                 </div>
-  
+
                 <div className="mt-5">
                   {isMember && (
                     <p className="mt-2 text-secondary text-[20px]">
@@ -53,12 +53,10 @@ const ProjectCard = ({ index, id, attributes }) => {
                     {attributes.title}
                   </p>
                 </div>
-              </Link>)
-            }
-            {
-              isMember && (<div
-              
-              >
+              </Link>
+            )}
+            {isMember && (
+              <div>
                 <div className="relative w-full h-[230px]">
                   <img
                     src={attributes.image.data.attributes.formats.small.url}
@@ -66,7 +64,7 @@ const ProjectCard = ({ index, id, attributes }) => {
                     className="w-full h-full object-cover rounded-2xl"
                   />
                 </div>
-  
+
                 <div className="mt-5">
                   {isMember && (
                     <p className="mt-2 text-secondary text-[20px]">
@@ -77,20 +75,11 @@ const ProjectCard = ({ index, id, attributes }) => {
                     {attributes.title}
                   </p>
                 </div>
-              </div>)
-            }
-
-            
+              </div>
+            )}
           </Tilt>
         </motion.div>
       </MediaQuery>
-
-
-
-
-
-
-
 
       <MediaQuery query="(max-width: 800px)">
         <div>
@@ -102,8 +91,8 @@ const ProjectCard = ({ index, id, attributes }) => {
             }}
             className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-[400px]"
           >
-            {
-              !isMember && (<Link
+            {!isMember && (
+              <Link
                 to={`/SinglePage/${attributes.type + "-" + id}`}
                 relative="path"
               >
@@ -114,7 +103,7 @@ const ProjectCard = ({ index, id, attributes }) => {
                     className="w-full h-full object-cover rounded-2xl"
                   />
                 </div>
-  
+
                 <div className="mt-5">
                   {isMember && (
                     <p className="mt-2 text-secondary text-[20px]">
@@ -125,12 +114,10 @@ const ProjectCard = ({ index, id, attributes }) => {
                     {attributes.title}
                   </p>
                 </div>
-              </Link>)
-            }
-            {
-              isMember && (<div
-              
-              >
+              </Link>
+            )}
+            {isMember && (
+              <div>
                 <div className="relative w-full h-[230px]">
                   <img
                     src={attributes.image.data.attributes.formats.small.url}
@@ -138,7 +125,7 @@ const ProjectCard = ({ index, id, attributes }) => {
                     className="w-full h-full object-cover rounded-2xl"
                   />
                 </div>
-  
+
                 <div className="mt-5">
                   {isMember && (
                     <p className="mt-2 text-secondary text-[20px]">
@@ -149,9 +136,8 @@ const ProjectCard = ({ index, id, attributes }) => {
                     {attributes.title}
                   </p>
                 </div>
-              </div>)
-            }
-
+              </div>
+            )}
           </Tilt>
         </div>
       </MediaQuery>

@@ -83,11 +83,11 @@ const Experience = () => {
       const reqOptions = {
         Headers: {
           Authorization:
-            "4097452d319c351f0804df6fe25a0b50f1ed06549537d5cc80b7d78d5d716e405f3a2586c1965c770f2e016c3770cc051b317d1c24e48b939fd105da2fe9d3bee95a19c968d65f1bd9f4c0389c940d5f8ed18d58c1ca352cf1632faecb820f34f52b08a8fad7182c7367d1aa8c9563bd804ee48ef4d6b5bf83fc94046073fccf",
+            "955608b4a78f18b4bd2f290175c821032bac37829aab52d886508b8db543fb3cc5e22a6cf1482bd39bb9f8baaf30085d505bc893f9b57bece258a920e28bb92867f7f5829ec1c2681eabe0df1d95a164dd3d821a9cc8e36e9e201c7d56466522a4a9c0e9013107c189ccea49c5c9f830e19a208a6d504d8be11c4837dc81383d",
         },
       };
       const request = await fetch(
-        "https://iut-backend.onrender.com/api/events?populate=*",
+        "http://localhost:1337/api/events?populate=*",
         reqOptions
       );
       const response = await request.json();

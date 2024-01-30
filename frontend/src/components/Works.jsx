@@ -23,7 +23,7 @@ var featuredachievements = achievements.slice(0,3)
      <MediaQuery query="(min-width: 800px)">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>IUT CAD Society</p>
-        <h2 className={`${styles.sectionHeadText}`}>Blogs</h2>
+        <h2 className={`${styles.sectionHeadText}`}>SPONSORS</h2>
       </motion.div>
 
       <div className="w-full flex">
@@ -67,7 +67,7 @@ var featuredachievements = achievements.slice(0,3)
       </div>
           
          </MediaQuery>
-      <h1 className="typeProject" id="react">Blogs</h1>
+      <h1 className="typeProject" id="react">Sponsors</h1>
       <div className="mt-20 flex flex-wrap gap-7">
        { workType==="react" && featuredBLOG.map((project, index) => (
           <ProjectCard
@@ -80,7 +80,7 @@ var featuredachievements = achievements.slice(0,3)
        ))
        }
        </div>
-       <h1 className="typeProject">Achievements</h1>
+       {/* <h1 className="typeProject">Achievements</h1>
       <div className="mt-20 flex flex-wrap gap-7">
        { workType==="react" && featuredachievements.map((project, index) => (
           <ProjectCard
@@ -93,7 +93,7 @@ var featuredachievements = achievements.slice(0,3)
        }
       
         
-      </div>
+      </div> */}
     </>
   );
 };

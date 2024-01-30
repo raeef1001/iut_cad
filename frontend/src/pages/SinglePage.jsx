@@ -42,7 +42,7 @@ const SinglePage = () => {
   const tags = routeParams.id.split("-");
   
   useEffect(() => {
-    if (tags[0] == "blogs") {
+    if (tags[0] == "sponsors") {
      
       BLOG.map((data) => {
         if (data.id == tags[1]) {

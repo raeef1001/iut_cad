@@ -15,7 +15,7 @@ const Blog = () => {
     <div className="min-h-[90vh] mt-10 ">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>IUT CAD Society</p>
-        <h2 className={styles.sectionHeadText}>BLOGS.</h2>
+        <h2 className={styles.sectionHeadText}>SPONSORS.</h2>
       </motion.div>
 
       <motion.p

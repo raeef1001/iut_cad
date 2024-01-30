@@ -13,43 +13,43 @@ const Navbar = () => {
   const [eventToggle, setEventToggle] = useState(false);
   const [isHoveredAbout, setIsHoveredAbout] = useState(false);
   const [isHoveredEvent, setIsHoveredEvent] = useState(false);
-   const aboutLinks = [
-    {
-      id: "Committee",
-      title: "Committee",
-    },
-    {
-      id: "Contact",
-      title: "Contact",
-    },
-    {
-      id: "About",
-      title: "About",
-    },
+  //  const aboutLinks = [
+  //   {
+  //     id: "Committee",
+  //     title: "Committee",
+  //   },
+  //   {
+  //     id: "Contact",
+  //     title: "Contact",
+  //   },
+  //   {
+  //     id: "About",
+  //     title: "About",
+  //   },
    
    
-  ]
-   const eventLinks = [
-    {
-      id: "Activities",
-      title: "Activities",
-    },
-    {
-      id: "LeaderBoard",
-      title: "Leaderboard",
-    },
-    {
-      id: "RegisterGlobal",
-      title: "Registration(Inter IUT)",
-    },
-    {
-      id: "RegisterIUT",
-      title: "Registration(Intra IUT)",
-    },
+  // ]
+  //  const eventLinks = [
+  //   {
+  //     id: "Activities",
+  //     title: "Event",
+  //   },
+  //   {
+  //     id: "LeaderBoard",
+  //     title: "Leaderboard",
+  //   },
+  //   {
+  //     id: "RegisterGlobal",
+  //     title: "Registration(Inter IUT)",
+  //   },
+  //   {
+  //     id: "RegisterIUT",
+  //     title: "Registration(Intra IUT)",
+  //   },
    
    
-  ]
-  const allLinks = [...navLinks, ...aboutLinks, ...eventLinks]
+  // ]
+  const allLinks = [...navLinks]
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -65,51 +65,51 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const aboutref = useRef(null);
-  const eventref = useRef(null);
- // Add an event listener when the component mounts
- useEffect(() => {
-  function handleDocumentClick(event) {
-    // Check if the click target is not within the div
-    if (aboutref.current && !aboutref.current.contains(event.target)) {
-      setAboutToggle(false);
-    }
-  }
+//   const aboutref = useRef(null);
+//   const eventref = useRef(null);
+//  // Add an event listener when the component mounts
+//  useEffect(() => {
+//   function handleDocumentClick(event) {
+//     // Check if the click target is not within the div
+//     if (aboutref.current && !aboutref.current.contains(event.target)) {
+//       setAboutToggle(false);
+//     }
+//   }
 
-  // Attach the event listener to the document
-  document.addEventListener('mousedown', handleDocumentClick);
+//   // Attach the event listener to the document
+//   document.addEventListener('mousedown', handleDocumentClick);
 
-  // Clean up the event listener when the component unmounts
-  return () => {
-    document.removeEventListener('mousedown', handleDocumentClick);
-  };
-}, [aboutToggle]);
+//   // Clean up the event listener when the component unmounts
+//   return () => {
+//     document.removeEventListener('mousedown', handleDocumentClick);
+//   };
+// }, [aboutToggle]);
 
 
- // Add an event listener when the component mounts
- useEffect(() => {
+//  // Add an event listener when the component mounts
+//  useEffect(() => {
 
-  function handleDocumentClick(event) {
-    // Check if the click target is not within the div
-    if (eventref.current && !eventref.current.contains(event.target)) {
-      setEventToggle(false);
-    }
-  }
+//   function handleDocumentClick(event) {
+//     // Check if the click target is not within the div
+//     if (eventref.current && !eventref.current.contains(event.target)) {
+//       setEventToggle(false);
+//     }
+//   }
 
-  // Attach the event listener to the document
-  document.addEventListener('mousedown', handleDocumentClick);
+//   // Attach the event listener to the document
+//   document.addEventListener('mousedown', handleDocumentClick);
 
-  // Clean up the event listener when the component unmounts
-  return () => {
-    document.removeEventListener('mousedown', handleDocumentClick);
-  };
-}, [eventToggle]);
+//   // Clean up the event listener when the component unmounts
+//   return () => {
+//     document.removeEventListener('mousedown', handleDocumentClick);
+//   };
+// }, [eventToggle]);
   return (
     <nav
       className={`${
         styles.paddingX
       } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+        scrolled ? "bg-opacity-1 bg-[#0e0e0e]" : "bg-transparent"
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -140,7 +140,7 @@ const Navbar = () => {
               <Link to={`/${nav.id}`}>{nav.title}</Link>
             </li>
           ))}
-          <li ref={aboutref}
+          {/* <li ref={aboutref}
             className={`${
               active === "About" ? "text-white" : "text-secondary"
             } hover:text-white text-[18px] font-medium cursor-pointer`}
@@ -152,8 +152,8 @@ const Navbar = () => {
             <p  onMouseEnter={() => setIsHoveredAbout(true)}
       onMouseLeave={() => setIsHoveredAbout(false)}>About  {isHoveredAbout && (
         <span className="inline">&#8595;</span>
-      )}</p>
-            <div 
+      )}</p> */}
+            {/* <div 
             className={`${
               !aboutToggle ? "hidden" : "flex"
             } p-6 black-gradient absolute top-20 right-0 xl:right-[14vw] mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
@@ -175,8 +175,8 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
-          </li>
-          <li ref={eventref}
+          </li> */}
+          {/* <li ref={eventref}
             className={`${
               active === "Event" ? "text-white" : "text-secondary"
             } hover:text-white text-[18px] font-medium cursor-pointer`}
@@ -184,12 +184,12 @@ const Navbar = () => {
               setActive("Event");
               setEventToggle(!eventToggle);
             }}
-          >
-             <p   onMouseEnter={() => setIsHoveredEvent(true)}
+          > */}
+             {/* <p   onMouseEnter={() => setIsHoveredEvent(true)}
       onMouseLeave={() => setIsHoveredEvent(false)}>Event  {isHoveredEvent && (
         <span className="inline">&#8595;</span>
-      )}</p>
-            <div 
+      )}</p> */}
+            {/* <div 
             className={`${
               !eventToggle ? "hidden" : "flex"
             } p-6 black-gradient absolute top-20 right-0 xl:right-[12vw] mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
@@ -211,7 +211,7 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
-          </li>
+          </li> */}
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">

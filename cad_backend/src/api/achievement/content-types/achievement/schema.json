@@ -4,7 +4,8 @@
   "info": {
     "singularName": "achievement",
     "pluralName": "achievements",
-    "displayName": "achievement"
+    "displayName": "achievements",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,13 +20,21 @@
       "type": "text",
       "required": true
     },
+    "is_featured": {
+      "type": "boolean",
+      "required": true
+    },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "default": "achievements"
     }
   }
 }
