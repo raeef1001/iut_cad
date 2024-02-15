@@ -887,6 +887,7 @@ export interface ApiCommitteeCommittee extends Schema.CollectionType {
     singularName: 'committee';
     pluralName: 'committees';
     displayName: 'committees';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -894,6 +895,7 @@ export interface ApiCommitteeCommittee extends Schema.CollectionType {
   attributes: {
     title: Attribute.String & Attribute.Required;
     image: Attribute.Media & Attribute.Required;
+    position: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -925,8 +927,6 @@ export interface ApiSponsorSponsor extends Schema.CollectionType {
   };
   attributes: {
     title: Attribute.String & Attribute.Required;
-    description: Attribute.Text & Attribute.Required;
-    is_featured: Attribute.Boolean & Attribute.Required;
     image: Attribute.Media & Attribute.Required;
     type: Attribute.String & Attribute.DefaultTo<'sponsors'>;
     createdAt: Attribute.DateTime;

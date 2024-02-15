@@ -24,7 +24,7 @@ const Achievements = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Our achievements stand as a testament to our dedication and expertise in the world of computing. From groundbreaking projects to remarkable collaborations, we've consistently pushed the boundaries of innovation. Our journey is marked by a trail of successes that inspire us to aim even higher.
+     The IUT CAD Society takes immense pride in celebrating the remarkable achievements and accomplishments of our talented members. Through their dedication, creativity, and hard work, our members consistently push the boundaries of innovation and excel in various competitions, projects, and endeavors within the realm of Computer-Aided Design (CAD).
       </motion.p>
       
        

@@ -31,14 +31,8 @@ var featuredachievements = achievements.slice(0,3)
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Explore our thought-provoking blogs where technology meets storytelling.
-        Dive into a world of insights, trends, and solutions. Our blogs provide
-        a platform for knowledge-sharing and innovation, offering a fresh
-        perspective on the ever-evolving landscape of computing. Delve into our
-        diverse collection of blogs, where the intersection of technology and
-        storytelling takes center stage. Uncover an abundance of insights,
-        trends, and solutions. Our blogs serve as a rich resource for
-        knowledge-sharing and innovation.
+        
+The IUT CAD Society takes immense pride in celebrating the remarkable achievements and accomplishments of our talented members. Through their dedication, creativity, and hard work, our members consistently push the boundaries of innovation and excel in various competitions, projects, and endeavors within the realm of Computer-Aided Design (CAD).
         </motion.p>
        
       </div>

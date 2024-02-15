@@ -1,7 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import { Context } from "../App";
-import ProjectCard from "../components/ProjectCard";
+import MemberCard from "../components/MemberCard";
 
 import { motion } from "framer-motion";
 
@@ -31,7 +31,7 @@ const Committee = () => {
 
       <div className="mt-20 flex flex-wrap gap-7">
         {testmember.map((project, index) => (
-          <ProjectCard
+          <MemberCard
             key={`project-${index}`}
             index={index}
             {...project}

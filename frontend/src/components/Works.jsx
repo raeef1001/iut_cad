@@ -9,13 +9,16 @@ import { Context } from '../App';
 import ProjectCard from "./ProjectCard";
 
 import MediaQuery from "react-responsive";
+import SponsorCard from "./SponsorCard";
 
 const Works = () => {
   const [banner,BLOG,activities,achievements] = useContext(Context);
 
 
-var featuredBLOG = BLOG.slice(0,3)
-var featuredachievements = achievements.slice(0,3)
+var featuredBLOG = BLOG
+console.log(featuredBLOG);
+console.log(222222);
+
 
   const [workType, setWorkType] = useState("react");
   return (
@@ -31,14 +34,7 @@ var featuredachievements = achievements.slice(0,3)
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Explore our thought-provoking blogs where technology meets storytelling.
-        Dive into a world of insights, trends, and solutions. Our blogs provide
-        a platform for knowledge-sharing and innovation, offering a fresh
-        perspective on the ever-evolving landscape of computing. Delve into our
-        diverse collection of blogs, where the intersection of technology and
-        storytelling takes center stage. Uncover an abundance of insights,
-        trends, and solutions. Our blogs serve as a rich resource for
-        knowledge-sharing and innovation.
+    The success and growth of the IUT CAD Society are greatly facilitated by the generous support and collaboration of our esteemed sponsors. Through their unwavering commitment to fostering innovation and excellence in the field of Computer-Aided Design (CAD), our sponsors play a pivotal role in providing our members with invaluable resources, opportunities, and industry insights.
         </motion.p>
        
       </div>
@@ -46,7 +42,7 @@ var featuredachievements = achievements.slice(0,3)
          <MediaQuery query="(max-width: 800px)">
          <div>
         <p className={`${styles.sectionSubText} `}>IUT CAD Society</p>
-        <h2 className={`${styles.sectionHeadText}`}>Blogs</h2>
+        <h2 className={`${styles.sectionHeadText}`}>SPONSORS</h2>
       </div>
 
       <div className="w-full flex">
@@ -54,14 +50,8 @@ var featuredachievements = achievements.slice(0,3)
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Explore our thought-provoking blogs where technology meets storytelling.
-        Dive into a world of insights, trends, and solutions. Our blogs provide
-        a platform for knowledge-sharing and innovation, offering a fresh
-        perspective on the ever-evolving landscape of computing. Delve into our
-        diverse collection of blogs, where the intersection of technology and
-        storytelling takes center stage. Uncover an abundance of insights,
-        trends, and solutions. Our blogs serve as a rich resource for
-        knowledge-sharing and innovation.
+             The success and growth of the IUT CAD Society are greatly facilitated by the generous support and collaboration of our esteemed sponsors. Through their unwavering commitment to fostering innovation and excellence in the field of Computer-Aided Design (CAD), our sponsors play a pivotal role in providing our members with invaluable resources, opportunities, and industry insights.
+
         </p>
        
       </div>
@@ -69,12 +59,12 @@ var featuredachievements = achievements.slice(0,3)
          </MediaQuery>
       <h1 className="typeProject" id="react">Sponsors</h1>
       <div className="mt-20 flex flex-wrap gap-7">
-       { workType==="react" && featuredBLOG.map((project, index) => (
-          <ProjectCard
-             key={`project-${index}`}
+       {  featuredBLOG.map((project, index) => (
+          <SponsorCard
+            
              index={index}
-            {...project}
-            stateType='react'
+             {...project}
+          
           />
           
        ))

@@ -196,8 +196,8 @@ const ImageSlider = (props) => {
       style={{backgroundImage: `url(${props.data[0].attributes.image.data.attributes.formats.small.url})`}}>
       <div className="shadow"></div>
       <div className="label">
-         <div className="icon">
-            <i className="fas fa-walking"></i>
+         <div className="icon bg-[#4C0811]">
+            {/* <i className="fas fa-walking "></i> */}
          </div>
          <div className="info">
          <div className="main">{props.data[0].attributes.name}</div>

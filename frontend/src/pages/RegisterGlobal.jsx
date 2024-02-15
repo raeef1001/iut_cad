@@ -240,7 +240,7 @@ const RegisterGlobal = () => {
           </div>
           <button
             type="submit"
-            className="   font-medium rounded-lg text-sm w-[70vw] lg:w-full sm:w-auto px-5 py-2.5 text-center className='bg-tertiary  text-white  shadow-md shadow-primary border-2"
+            className="   font-medium rounded-lg text-sm w-[70vw] lg:w-full sm:w-auto px-5 py-2.5 text-center className='bg-opacity-1 bg-[#640D14]  text-white  shadow-md shadow-primary border-2"
           >
             Submit
           </button>

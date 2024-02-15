@@ -31,19 +31,19 @@ const navLinks = [
 
 const services = [
   {
-    title: "Application Development",
+    title: "SolidWorks",
     icon: web,
   },
   {
-    title: "Robotics",
+    title: "AutoCAD", 
     icon: mobile,
   },
   {
-    title: "Network & Communication",
+    title: "Formula IUT",
     icon: backend,
   },
   {
-    title: " Multimedia & Gaming",
+    title: "CAD Design",
     icon: creator,
   },
  
@@ -54,17 +54,17 @@ const services = [
 const Goals = [
   {
     Goal:
-    "Unifying Technology Enthusiasts, Fostering Innovation, and Nurturing Digital Literacy. Together, we Code the Future, Connect the World, and Inspire Excellence in the Ever-Evolving Realm of Computing.",
+    "Our goal is to enhance members' proficiency in CAD software and techniques through comprehensive training and workshops, fostering confident and creative problem-solving abilities.",
 
   },
   {
     Goal:
-    "Fueling Progress Through Digital Excellence. We're a Global Community of Innovators, Educators, and Visionaries, Embracing Technology's Challenges and Opportunities to Shape Tomorrow's Digital Landscape.",
+    "We aim to encourage collaboration among members from various disciplines, promoting the exchange of ideas and expertise to address complex design challenges across different fields.",
    
   },
   {
     Goal:
-      " Dedicated to Advancing Computer Science and Building a Brighter Digital Future. We Encourage Curiosity, Foster Collaboration, and Champion Technological Proficiency, Uniting Members in the Pursuit of Innovation and Excellence.",
+      " We offer networking events, guest lectures, and career workshops to connect members with industry professionals and job opportunities, supporting their professional growth beyond academia.",
    
   },
 ];

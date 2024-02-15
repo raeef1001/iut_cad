@@ -40,7 +40,7 @@ const Feedbacks = () => {
         className={`bg-opacity-1 bg-[#800e13] rounded-2xl ${styles.padding} min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>IUTCS</p>
+          <p className={styles.sectionSubText}>IUTCAD Society</p>
           <h2 className={styles.sectionHeadText}>Our Goals.</h2>
         </motion.div>
       </div>

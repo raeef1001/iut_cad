@@ -50,7 +50,7 @@ const CarouselItem = ({data,index,activeIndex}) => {
           
         }}
       >
-         <Image className ='h-full w-full ' src={data.attributes.image.data.attributes.formats.small.url} alt='Card1' />
+         <Image className ='h-full w-full ' src={data.attributes.image.data.attributes.formats.large.url} alt='Card1' />
       </div>
     );
 };

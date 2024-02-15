@@ -25,14 +25,7 @@ const Activities = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Join our upcoming event, a captivating fusion of technology and
-            creativity. Discover the latest trends, gain insights from industry
-            experts, and immerse yourself in hands-on workshops. Unleash your
-            potential and forge new connections in the ever-evolving world of
-            computing.Discover the latest trends, gain insights from industry
-            experts, and immerse yourself in hands-on workshops. Unleash your
-            potential and forge new connections in the ever-evolving world of
-            computing.
+      The IUT CAD Society is a dynamic community that thrives on a wide range of engaging activities designed to foster creativity, skill development, and camaraderie among our members. Our society offers a vibrant array of events, workshops, and initiatives tailored to cater to the diverse interests and aspirations of our members in the field of Computer-Aided Design (CAD).
       </motion.p>
       
        

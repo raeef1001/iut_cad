@@ -1,0 +1,19 @@
+cloudinary : mohammadrafy1001
+render : you
+postgress : render(moha) (90 days : 26 jan)
+
+youtube video : https://www.youtube.com/watch?v=1HDO14_cCp4&ab_channel=JSDevHindi
+
+
+postgres://cad_kqal_user:Ep7gFoF2mPFbwCcuTwh2qvQmK7NFruHB@dpg-cmplmuen7f5s73dff8c0-a.singapore-postgres.render.com/cad_kqal
+
+
+
+strapi credentials : 
+
+f_name : mohammad
+l_name : rafee
+email : mohammadrafy1001@gmail.com
+pass : 4EZ?HtA*xzn$2T%
+
+

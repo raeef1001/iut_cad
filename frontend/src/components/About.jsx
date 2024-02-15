@@ -44,7 +44,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        className="bg-opacity-1 bg-[#640D14] rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
       >
         <img
           src={icon}
@@ -76,16 +76,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        IUT Computer Society (IUTCS) was formed by the students of the
-        department of Computer Science and Engineering (CSE) (former CIT) of
-        Islamic University of Technology (IUT) in 2008. There are mainly three
-        societies in IUT and IUTCS is one of them. Students of other departments
-        can also join this society. We have an active student body which
-        arranges several events like Programming Classes and Contests,
-        Application Development Classes, Co-Curricular Aid and Projects etc in a
-        regular basis. We also arrange several workshops on different topics
-        which are also accompanied by IT professionals of our country. At
-        present we have 7 committees to execute these functions. These are:
+      Welcome to the world of innovation, creativity, and technological prowess with the IUT CAD Society! Established as a pioneering community at the forefront of cutting-edge design and engineering, the IUT CAD Society brings together passionate individuals driven by a shared enthusiasm for Computer-Aided Design (CAD) and its limitless possibilities. Whether you're a seasoned CAD expert or a newcomer eager to explore the realms of digital design, our society offers a vibrant platform for collaboration, learning, and professional development.
       </motion.p>
          </MediaQuery>
          <MediaQuery query="(max-width: 800px)">
@@ -98,16 +89,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        IUT Computer Society (IUTCS) was formed by the students of the
-        department of Computer Science and Engineering (CSE) (former CIT) of
-        Islamic University of Technology (IUT) in 2008. There are mainly three
-        societies in IUT and IUTCS is one of them. Students of other departments
-        can also join this society. We have an active student body which
-        arranges several events like Programming Classes and Contests,
-        Application Development Classes, Co-Curricular Aid and Projects etc in a
-        regular basis. We also arrange several workshops on different topics
-        which are also accompanied by IT professionals of our country. At
-        present we have 7 committees to execute these functions. These are:
+       Welcome to the world of innovation, creativity, and technological prowess with the IUT CAD Society! Established as a pioneering community at the forefront of cutting-edge design and engineering, the IUT CAD Society brings together passionate individuals driven by a shared enthusiasm for Computer-Aided Design (CAD) and its limitless possibilities. Whether you're a seasoned CAD expert or a newcomer eager to explore the realms of digital design, our society offers a vibrant platform for collaboration, learning, and professional development.
       </p>
          </MediaQuery>
      

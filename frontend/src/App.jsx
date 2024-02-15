@@ -121,7 +121,7 @@ const App = () => {
             data: {
               attributes: {
                 formats: {
-                  small: {
+                 large: {
                     url: "https://cdn.dribbble.com/users/1053052/screenshots/3600670/media/049491d00605f54d441aa47b9b419910.gif",
                   },
                 },
@@ -137,7 +137,7 @@ const App = () => {
             data: {
               attributes: {
                 formats: {
-                  small: {
+                  large: {
                     url: "https://cdn.dribbble.com/users/1053052/screenshots/3600670/media/049491d00605f54d441aa47b9b419910.gif",
                   },
                 },
@@ -153,7 +153,7 @@ const App = () => {
             data: {
               attributes: {
                 formats: {
-                  small: {
+                  large: {
                     url: "https://cdn.dribbble.com/users/1053052/screenshots/3600670/media/049491d00605f54d441aa47b9b419910.gif",
                   },
                 },
@@ -186,6 +186,8 @@ const App = () => {
     };
     try {
       const banners = fetchBanner();
+      console.log(banners);
+      console.log(66666666666666666666666666666666666666666666666666666);
     } catch (err) {
       console.log(err);
     }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "committee",
     "pluralName": "committees",
-    "displayName": "committees"
+    "displayName": "committees",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,12 +17,15 @@
       "required": true
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "position": {
+      "type": "string"
     }
   }
 }
